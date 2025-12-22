@@ -1,0 +1,3 @@
+- add bash script to combine pviewer html, css, javascript,
+  .. makes single static html that can be run and tested without web server.
+
