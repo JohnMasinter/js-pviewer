@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <!--
+    pviewer.html
+
+    This is html web page to view any specified picture.
+
+    To use it, reference it like this and specify image file:
+    <a href="pviewer.html?img=/img/tree.jpg">Tree</a>
+
+    The CSS styling is pulled in from file pviewer.css,
+    but if you prefer a single file solution, it could be included in head <style> section.
+
+    The JavaScript is pulled in from file pviewer.js,
+    but if you prefer a single file solution, it could be included in head <script> section.
+
+    At top of page there is a row of buttons, left to right:
+    bNam = display image name, (a) inactive button just used as frame for text
+    bDim = display image native dimensions (a)
+    bMin = "Min" button, zoom to minimum size, we arbitrarily use 400px wide
+    bSub = "-"   button, zoom down/out one step, we arbitrarilyy use 400px steps
+    bZom = display image zoom dimensions (a)
+    bAdd = "+"   button, zoom up/in one step, we arbitrarilyy use 400px steps
+    bMax = "Max" button, zoom to minimum size, we arbitrarily use 400px wide
+    -->
+
+    <!-- -------------------------------------------------------------------------------- -->
+    <head>
+        <title>JS Pviewer Test ver 0</title>
+        <link rel="stylesheet" type="text/css" href="pviewer.css">  <!-- include style -->
+        <script type="text/javascript" src="pviewer.js"></script>   <!-- include viewer -->
+    </head>
+
+    <!-- -------------------------------------------------------------------------------- -->
+    <body onload="pViewer()">
+
+        <!-- nav bar = buttons across top of viewer -->
+        <div id=navDiv class=nav>
+            <button id=bNam class=bdim />     <!-- display image name (on inactive button face) -->
+            <!-- little space before next button -->
+            <span style="width: 30px; display: inline-block;">&nbsp;</span>
+            <button id=bDim class=bdim />     <!-- display image native dimensions -->
+            <span class=bspn></span>          <!-- little space before next button -->
+            <button id=bMin class=bgra onclick="fMag('m')">Min</button> <!-- minimum zoom button -->
+            <button id=bSub class=bgrn onclick="fMag('-')">-</button> <!-- zoom out "-" button -->
+            <button id=bZom class=bdim />     <!-- display current zoom dimensions -->
+            <button id=bAdd class=bgrn onclick="fMag('+')">+</button> <!-- zoom in "+" button -->
+            <button id=bMax class=bgra onclick="fMag('M')">Max</button> <!-- maximum zoom button -->
+        </div>
+
+        <!-- image display -->
+        <div id=imgDiv class=img>
+            <img id=imgTag src="" onload="fInit()">
+        </div>
+
+    </body>
+
+<html>
+

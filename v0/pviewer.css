@@ -1,0 +1,62 @@
+/* pviewer0.css */ 
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0px;
+    background: azure;
+}
+
+/* default button style */
+button {
+    background-color: dimgray; /* Green background */
+    color: white; /* White text */
+    padding: 3px 5px; /* Top/bottom padding, left/right padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline for links within buttons */
+    display: inline-block; /* Allow setting width/height and other block-level properties */
+    font-size: 16px; /* Text size */
+    margin: 8px 2px; /* Top/bottom margin, left/right margin */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border: none; /* Remove default border */
+    border-radius: 3px; /* Rounded corners */
+    transition-duration: 0.2s; /* Smooth transition for hover effects */
+}
+
+/* default button hover */
+button:hover {
+    background-color: darkslategray; /* darker on hover */
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.24), 0 7px 5px 0 rgba(0,0,0,0.19); /* Shadow on hover */
+}
+
+/* different button color classes */
+.bdim { color: white; background-color: dimgray;   }
+.bgra { color: white; background-color: gray;      width: 50px; }
+.bgrn { color: white; background-color: darkgreen; width: 50px; }
+
+/* span style button separater */
+.bspn { width: 90px; display: inline-block; }
+
+/* nav div */
+.nav {
+    width: 99%;
+    display: inline-block;
+    text-align: center;
+}
+
+/* image div */
+.img {
+    width: 99%;
+    /* height: 100px; */
+    overflow: scroll;
+    white-space: nowrap;
+    /* text-align: center; */
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid blue;
+    padding: 0px;
+}
+
