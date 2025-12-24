@@ -1,4 +1,5 @@
-// pviewer0.js
+// pviewer.js
+// Copyright (c) 2025-2026, John F Masinter, MIT License, free to use, see "LICENSE"
 // simple JavaScript picture viewer, open source released under MIT License
 // version 0, not latest ver, offered for learning puposes
 // https://github.com/JohnMasinter/js-pviewer
